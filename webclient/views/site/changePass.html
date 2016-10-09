@@ -1,0 +1,15 @@
+
+<form name="passChangeForm"   class="css-form" ng-submit="submitPassChnageForm(passChangeForm.$valid)" novalidate>
+  <div class="container">
+    <!-- <label><b>Username</b></label> -->
+     <input type="text" placeholder="Enter old password" name="oldPassword" ng-model="passChnage.oldPassword" required>
+    
+      <input type="text" placeholder="Enter new password" name="newPassword" ng-model="passChnage.newPassword" required >
+
+       <input type="text" placeholder="Re-enter new password" name="reNewPassword" ng-model="passChnage.reNewPassword" required >
+
+    <button type="submit" ng-disabled="changePassButton">Change</button>
+  </div>
+    <!-- <span style="margin-left: 19px;">Forgot <a href="#">password?</a></span>-->
+    <span style="margin-left: 296px;">I have account <a href="#/login">Signin</a></span> 
+</form>

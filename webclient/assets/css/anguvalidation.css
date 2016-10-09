@@ -1,0 +1,44 @@
+/*  .css-form input.ng-invalid.ng-touched {
+    border-color: #A94440;
+  }
+
+  .css-form input.ng-valid.ng-touched {
+    border-color: '';
+  }
+
+  .ng-submitted input.ng-invalid.ng-untouched {
+    border-color: #A94440;
+  }
+  
+*/
+  
+form {
+	margin-left: 410px;
+    margin-top: 95px;
+}
+input[type=text], input[type=password], input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}

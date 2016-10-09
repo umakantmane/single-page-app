@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="soonApp">
+<head>
+<title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
+  <link rel="stylesheet" href="assets/css/anguvalidation.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.js"></script>
+      <script src="https://unpkg.com/angular-toastr/dist/angular-toastr.tpls.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/angular-toastr/dist/angular-toastr.css" />
+
+<!-- <script src="assets/angular-js/angular-material.min.js"></script> -->
+      <script src="index.js"></script>
+      <script src="config/params.js"></script>
+      <script src="controller/site.js"></script>
+      <script src="models/site.js"></script>
+</head>
+<body>
+  <!-- HEADER AND NAVBAR -->
+        <header>
+            <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/dashboard">Manas</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/dashboard"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/about"><i class="fa fa-shield"></i> About</a></li>
+                    <li ng-show="logMe"><a href="#/login"><i class="fa fa-sign-in"></i>Login</a></li>
+                    <li ng-show="signupMe"><a href="#/signup"><i class="fa fa-user"></i>Sign Up</a></li>
+                    <li ng-show="logOutMe" ng-click="logout();"><a href=""><i class="fa fa-sign-out"></i>Logout({{user}})</a></li>
+                    <!-- <li><button class="btn default-btn" ng-click="openmD($event);">mdDialog</button></li> -->
+                </ul>
+            </div>
+            </nav>
+        </header>
+<div ng-view></div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+<form name="userForm"   class="css-form" ng-submit="submitForm(userForm.$valid)" novalidate>
+  <div class="container">
+    <!-- <label><b>Username</b></label> -->
+    <input type="text" placeholder="Enter Username" name="uname" ng-model="login.username" required>
+   
+    <!-- <label><b>Password</b></label> -->
+    <input type="password" placeholder="Enter Password" name="psw" ng-model="login.password" required>
+        
+    <button type="submit">Login</button>
+    <!-- <input type="checkbox" checked="checked"> Remember me -->
+  </div>
+  <!-- <img src="http://i.stack.imgur.com/ZW4QC.png"> -->
+    <span style="margin-left: 19px;">Forgot <a href="#/forgotPass">password?</a></span>
+    <span style="margin-left: 133px;">Don't have account <a href="#/signup">Sign Up</a></span>
+</form>
